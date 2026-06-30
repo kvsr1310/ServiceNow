@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1116000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>load_excel_data_via_catalog_request</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item.sys_id","label":"Trigger - Service Catalog➛Requested Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id","usedInstances":{"a6f451bd-5b9b-4e93-b1d6-139dfb009853":["conditions"]}},{"name":"a6f451bd-5b9b-4e93-b1d6-139dfb009853.Record","label":"1 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"5143245c-84e0-47c7-9756-a7ccffa74b7b":["attachment_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5143245c-84e0-47c7-9756-a7ccffa74b7b.excel_rows","label":"2 - Parse Excel attachment➛Excel Rows","reference_display":"Excel Rows","type":"array.string","base_type":"array.string","usedInstances":{"2e366227-62b3-46d9-8b42-36a11e7cce3f":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDa7a50e3ff0e5cb543814830df06261de","child_label":"Excel Rows_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"excel_rows_child0","child_uiUniqueId":"567f8ecf-7b93-49e1-aa22-4a1314a7b60c","uiUniqueId":"dcf643ce-81f0-401b-b86d-abf4833c49e9"}},{"name":"2e366227-62b3-46d9-8b42-36a11e7cce3f.item","label":"3 - For Each➛Excel Rows_child0","type":"string","base_type":"string","usedInstances":{"fb72ff78-7c9d-4d52-93b7-9cdcf5807537":["combined_line"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master_snapshot>19facef74729cb54e5f9eb0f316d43e2</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Load Excel data via catalog request</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>c2fa023b4729cb54e5f9eb0f316d4366</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:12:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8b60abf47e5cb54e5f9eb0f316d43f1</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Load Excel data via catalog request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TestingSource" source="x_1659940_testin_0">3d37c3fd472d0f14e5f9eb0f316d438e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name>sys_hub_flow_a8b60abf47e5cb54e5f9eb0f316d43f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:51</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>6efa023b4729cb54e5f9eb0f316d43ff</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2fa023b4729cb54e5f9eb0f316d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:51</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a8b60abf47e5cb54e5f9eb0f316d43f1^sys_idNOT IN68b60abf47e5cb54e5f9eb0f316d43f5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a8b60abf47e5cb54e5f9eb0f316d43f1</id>
+        <name>Load Excel data via catalog request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:12:11</sys_created_on>
+        <sys_id>68b60abf47e5cb54e5f9eb0f316d43f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:12:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=68b60abf47e5cb54e5f9eb0f316d43f5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a8b60abf47e5cb54e5f9eb0f316d43f1^sys_idNOT IN45c6c6ff47e5cb54e5f9eb0f316d43ac,c8c686ff47e5cb54e5f9eb0f316d43b6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Load Excel data via catalog request">a8b60abf47e5cb54e5f9eb0f316d43f1</model>
+        <model_id>a8b60abf47e5cb54e5f9eb0f316d43f1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a8b60abf47e5cb54e5f9eb0f316d43f1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:12:29</sys_created_on>
+        <sys_id>45c6c6ff47e5cb54e5f9eb0f316d43ac</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=45c6c6ff47e5cb54e5f9eb0f316d43ac"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Load Excel data via catalog request">a8b60abf47e5cb54e5f9eb0f316d43f1</model>
+        <model_id>a8b60abf47e5cb54e5f9eb0f316d43f1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a8b60abf47e5cb54e5f9eb0f316d43f1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:12:26</sys_created_on>
+        <sys_id>c8c686ff47e5cb54e5f9eb0f316d43b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c8c686ff47e5cb54e5f9eb0f316d43b6"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=a8b60abf47e5cb54e5f9eb0f316d43f1^sys_idNOT IN4cc686ff47e5cb54e5f9eb0f316d43ac"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">a8b60abf47e5cb54e5f9eb0f316d43f1</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:12:25</sys_created_on>
+        <sys_id>4cc686ff47e5cb54e5f9eb0f316d43ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:46</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTWsbMRD9K0anFnyQ7SaufQuBgCFtIE5zCWXRSrNrUa20lbSbuCb/vTP7YW/SpQSSmzR6M/PmzdPDgRmRgmFrdlvZyZVxj5ONZVOmbQRvhbnbl4CPcue0BIy3h2sdIls/HFh2L0xFgFTIX7l3lVUIyq4HNTOqqe3khJh8UpCJysTPhN0UIqcKdN6CARlBsXUmTACM/AjD2zcdgrZ5F3ieDghkzsP/CbxEvKPtzykrhFUiOr8/gbwr7qAojYhwDDqvwLP1jPMpq4nodh82qu1qRUH9fWUTYphokr3upsGj0gGL7e9PEbnTRnmwqDxSKIXHCpHqH149RVxa0u/1sl+dpsbnfMXlcr5aLud8seA8O0szmUm5/Drj57OzFeLGDTFKN75yx3BeeIpg1UDGfzXzINSNNafADm3XzlqIp6D/YPEvnHAZ4HCy0+F4TTqNenmIRWh8ad5uwHrMwd0gnCw2VuuFl+oxC/ZSkFu6bpcfT3D2boJzIthKd1NG7dBCbEGrFamhnLAP7cI9SExJotd5jomY5ExV2O9jvujYD7xbBdwWlOQIWnH/abY793jbr/NK24ZS92icFOZ4ExE7p1Uk/Q5MqFpgBjk6euzx3Lgi+V1RRvN7+l5JMxEBgvS6jBcy6hqOX/kv1VCh4wEFAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=a8b60abf47e5cb54e5f9eb0f316d43f1^sys_idNOT IN9de6caff47e5cb54e5f9eb0f316d4368,cd0a82b74729cb54e5f9eb0f316d431a,e0474a334729cb54e5f9eb0f316d4327"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">a8b60abf47e5cb54e5f9eb0f316d43f1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:13:03</sys_created_on>
+        <sys_id>9de6caff47e5cb54e5f9eb0f316d4368</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:45:20</sys_updated_on>
+        <ui_id>a6f451bd-5b9b-4e93-b1d6-139dfb009853</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GeKTfhK9C3VSuklfZupW13X7ory4kdsK6xU8ehSxH/fcexAxGkQLRUanUfMzO2z8ycM3HyuPYZ8a99Mgkm6WQyHEdB0O8HwWjUT3AYx/1REgcxHvgdX+AFhUiNY07hcYl5YZ7zVY6w1jiZL6jQ4CAszzhe/XD+T3VfMmecKCr868dfHT/DCvbUVPnX6z3XuaA4jimH0AeHag+kXmXbR1T6rO1LfZn31TqkIgZK0PHpb00FoYAhxTynHX+BBcFaqtXWoigmd4LvDHMGGV77vgn+nbMXOHccmLiUQlYJtb7tI3Jlsub0Fmt8r1WR6EK50GQuWUJzWw9CU1xwfVO32YC7TDMp7BKbtl0tebEQX205/O0GVVfAUuQAgmYmUYPcpZHez+XztwrllImyJs7JZYL59gm6rlhcaINn7VNOTZPRAmcZEzOUKblk5WLAsujOODx0Uy6f4dCczUQXJwZ4F+qKu1Ow35bmH1gxk8W/sA0sBkCMA0OQbWEuC1WWcokSXuSlQ2GR2738TcfQ8YbjPN9lDiVHT4XBbevgMka2aGZJolimP8EWS+qS23QqXQyPUnCyo1wiBWEGRV4Th0MNEmHkZwFbkPX6nqol9M27gcS5nKGwq+hTQXONmKaLrg3ebA6V9HebtZTe6bwr6d3UE28qhhPhge1L0wZOhOHFRDgIgo8kQzj8/amwva5sCU6IKyRHSUZ2fMql0sjWsqauQ4m05vkZECqe3xlmevHqNVSO5imjnDS9a6bGsfeu6f0/3zXvkuQAiCDbPSY4E+XIBaBvxf7hUerF4R7PSnrVrl3GhvPkUAPY09J7aa2EM+BUSriHs70Hi6cBYjXvS8rsz/rK6ATQv5gA+r3LCGC9TXNbyIaaV3dF080q/sXE4/14oGBtQbhpElirM8O2Z/Y2hwLut1JwnWzWc/sK5y58qXxFkZ23HAFzWOrOQ1a/6JmRGdW706soIvUz5v81+R3jUNWoMr03uKCGR7+R4toFlaVoAZ1jGVwiFU2AHPDhpihKZSEIcjfoHZFMJ1Om4CZpgw8HzTcK+hGeBGF6ek69MtrbRrd8EZ/Ooyrl59SrEnGn5R4k4pWJeNtE2qXdZmgNLng5vfTQmmLGy27Ax1FWaydVSqpXBteJRh5hxJlT7UxQ4UVB/f3Ya5JA4/g7gfVDfGlffjQlFMeDHh5F/TAMgjAgUTCOonA8itMRjgbpTqMI5SKBaQo7p0AV2B5V1Kj6HBzOHztS2w6aM1BVFLyVwnxn9yLtGVjQX6+CdRq4GyixlJxisTdRHuA98c/U4Xd8Hb67qfIh/jsV7GG/0tbUWOu3ujcU7LtgTwX9bCg2pkFvHJLkahyF0dUgJaOrCcHDKzyJh1Gf0GSQXvIq8OsP6rGUAcUVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9de6caff47e5cb54e5f9eb0f316d4368"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update catalog item features">8cf98e774729cb54e5f9eb0f316d4366</action_type>
+        <action_type_parent display_value="Update catalog item features">ee9882f34729cb54e5f9eb0f316d439a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>8cf98e774729cb54e5f9eb0f316d4366</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">a8b60abf47e5cb54e5f9eb0f316d43f1</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>2e366227-62b3-46d9-8b42-36a11e7cce3f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:26:42</sys_created_on>
+        <sys_id>cd0a82b74729cb54e5f9eb0f316d431a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:45:20</sys_updated_on>
+        <ui_id>fb72ff78-7c9d-4d52-93b7-9cdcf5807537</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51SXWvbQBD8K+WeLaEvS7LfSkKg0DbQtHkJQazu9uyD00m5Ozlxjf979yzZCQmF0hfBzu3szszq4cCUYGtWcLmqsaqKKlvxdlngUq6wTWSelqLIS8EWzECH1Mn7rlUGRaPpS/AO9BjwwyHDvCyzrIrKrM2johSrqG6LLMpLSFOsOMdcxspjdzwSTyg3aNjf/yedb5UWFg1bPzwu2ACW1Hm0bH149/Sv9jS0qN/4+zT7+4ttvx8C7LxVZjPXX+cRd2ewtyJIShcMXzwagaRFgna4YB0YAb63+wtiEcSt0a/AVhlP01hofnHqN+2rkyQJnRLJH8fp9VI2c6YTLK/BA0kZuR/t3Mq3veLopmQEShi1v3qLTQ23g1e9mSgeWn1m93rszPcpEHYZcD4hIaMjETgEq0H7bETebfvnH2eVN8qcUpkfdc9BXyrwlF07+qDnwEb1813ME/IhaNTY0camg2EgpBlsv1OnLeFw8UZTEUvdP5M6pzYmBh4cxnQCiG8Ivz7B92BVsPuNxhA5rPtl1NOIX04/UdEWCV+mUcXrJCpEvYxquUwimZRVjqLGrErZccHc3l1pcO41KLpQ8zQGm1Nsc0DNlHGgcKsG/5lE7XDO4vj4By5lus+cAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cd0a82b74729cb54e5f9eb0f316d431a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Parse Excel attachment">32a50e3f47e5cb54e5f9eb0f316d4363</action_type>
+        <action_type_parent display_value="Parse Excel attachment">ae04b97b4765cb54e5f9eb0f316d43da</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>32a50e3f47e5cb54e5f9eb0f316d4363</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">a8b60abf47e5cb54e5f9eb0f316d43f1</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:14:38</sys_created_on>
+        <sys_id>e0474a334729cb54e5f9eb0f316d4327</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:45:20</sys_updated_on>
+        <ui_id>5143245c-84e0-47c7-9756-a7ccffa74b7b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/42RzW7bMBCEX6XgWRIs68/yLUhgoEDbAE6bSxAIS3JpE6AohaKcuIbfvaSk2GobFD1ydpc7+83TiUhO1qRYQrbARKQFZoxmKWaiRLoQSZzzNCkKEhANNbpOsBbYvkZtK4OsMdyVDqB6XzudIBdpFlMeZrSkYYplEtKY52GclFzQxaJcZUm0HebOZzfJZdcqOD5OHziF7aXiBjVZPz0HpAXj1lo0ZH36o/S/vhVQVK715mL80/bd+D9ussfWlwwKdCsZTtKX6bftTHcD3mAcEHyzqDk6ZwJUhwGpQXOwjTleFIPA77W6Cnup7Xh6DW+d/Om2JstgtnhNumNXXT2SWbGaAP52n2sQd2DhwZqe2d5cyDaSYTfS4yigV/Z2ro0N962VjR5HLFD1oQHWqL7W30Z85PLdLMe+c+aw9Tj8fdOx4mHfvF7YbaQeyE1F1TBQs1YEw/YbiconLaTCasgr8HkZSXvrjZ9IL7//ndUofpQWKhySrqFtpd5VrWkOcrDhrqqjnXKPSKjm1dnv5E5HwDyQyOUI0cbpd4P8CEZ6Ol/dN27Yb/yh5UuPn73bOBc5zVgSlnmahOkyycJVuaJhWRQxK0CwPOPkHHiwtwq67krSHVG99J7DyHUiWI2R+BFmZGtvnKkDTrDOz78AwLLKTcgDAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0474a334729cb54e5f9eb0f316d4327"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a8b60abf47e5cb54e5f9eb0f316d43f1^sys_idNOT IN2067ca334729cb54e5f9eb0f316d4331"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7cfacef74729cb54e5f9eb0f316d4354</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">a8b60abf47e5cb54e5f9eb0f316d43f1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:15:11</sys_created_on>
+        <sys_id>2067ca334729cb54e5f9eb0f316d4331</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:47</sys_updated_on>
+        <ui_id>2e366227-62b3-46d9-8b42-36a11e7cce3f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTwW7bMAz9F50Tw3acuMmtwFCgh65AV/QyFAYt0YlQWdIkOYln+N9HxU469DRgJ4uP5ON7ojww0wXbBf9q7r2Xe812P98XTOqI0XlgUrAdy7ai2Wbplq/yzSpP0/yuyOrNqs5ysQIUG7ZgGlqkShmw9RQeQXUxHoZ1VqzyYs2XdwWmy6Lk5XJbrjdLKDlvGiiLuqwTPHNUlTMnP47ULaS3Cvq3/yLhB6mEw9mSBUcKAzq2G76kQm+xUlCjolkvyI0T0cK/Or92Ps7Wv9xEZKfQ3XjpE1Xk6YLhOaAWSIMaUB4XrAUtIBjXs11wHQEOQTxr1d8qDlIHomOx9uzlb+LO0jQWNkiOOE7JW1jNdznB/GAkx2cbpNETEqBWcw83qmv190l+3AI20Klw3QIhnSc+tFFzVDFLan4czOnlOvBB6ou/OakMB3WLIAQn6y6gj2tAhS0RVS1YK/W+ss4c5aWZtLTJXlGQNMqcaGh8nAnwKDyhK4LkgfBvF/gNnIwunoiGmseL++pXF+dOPmbF1WSaCjx30oZ7ojviLG58j692YvLTwxDIpaeBrxF7vP4TMdHTkiX/GzoZ9xGlfmLjH38qUChdAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a8b60abf47e5cb54e5f9eb0f316d43f1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:12:31</sys_created_on>
+        <sys_id>61c6c6ff47e5cb54e5f9eb0f316d43df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TestingSource" source="x_1659940_testin_0">3d37c3fd472d0f14e5f9eb0f316d438e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:12:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a8b60abf47e5cb54e5f9eb0f316d43f1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:12:29</sys_created_on>
+        <sys_id>78c6c6ff47e5cb54e5f9eb0f316d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TestingSource" source="x_1659940_testin_0">3d37c3fd472d0f14e5f9eb0f316d438e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:12:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>load_excel_data_via_catalog_request</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item.sys_id","label":"Trigger - Service Catalog➛Requested Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id","usedInstances":{"a6f451bd-5b9b-4e93-b1d6-139dfb009853":["conditions"]}},{"name":"a6f451bd-5b9b-4e93-b1d6-139dfb009853.Record","label":"1 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"5143245c-84e0-47c7-9756-a7ccffa74b7b":["attachment_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5143245c-84e0-47c7-9756-a7ccffa74b7b.excel_rows","label":"2 - Parse Excel attachment➛Excel Rows","reference_display":"Excel Rows","type":"array.string","base_type":"array.string","usedInstances":{"2e366227-62b3-46d9-8b42-36a11e7cce3f":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDa7a50e3ff0e5cb543814830df06261de","child_label":"Excel Rows_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"excel_rows_child0","child_uiUniqueId":"567f8ecf-7b93-49e1-aa22-4a1314a7b60c","uiUniqueId":"dcf643ce-81f0-401b-b86d-abf4833c49e9"}},{"name":"2e366227-62b3-46d9-8b42-36a11e7cce3f.item","label":"3 - For Each➛Excel Rows_child0","type":"string","base_type":"string","usedInstances":{"fb72ff78-7c9d-4d52-93b7-9cdcf5807537":["combined_line"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master>true</master>
+        <name>Load Excel data via catalog request</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Load Excel data via catalog request">a8b60abf47e5cb54e5f9eb0f316d43f1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19facef74729cb54e5f9eb0f316d43e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:48</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=19facef74729cb54e5f9eb0f316d43e2^sys_idNOT INd1facef74729cb54e5f9eb0f316d43e4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>19facef74729cb54e5f9eb0f316d43e2</id>
+        <name>Load Excel data via catalog request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:48</sys_created_on>
+        <sys_id>d1facef74729cb54e5f9eb0f316d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d1facef74729cb54e5f9eb0f316d43e4"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=19facef74729cb54e5f9eb0f316d43e2^sys_idNOT IN25facef74729cb54e5f9eb0f316d43ff,51facef74729cb54e5f9eb0f316d43e6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Load Excel data via catalog request">19facef74729cb54e5f9eb0f316d43e2</model>
+        <model_id>19facef74729cb54e5f9eb0f316d43e2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_19facef74729cb54e5f9eb0f316d43e2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:49</sys_created_on>
+        <sys_id>25facef74729cb54e5f9eb0f316d43ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=25facef74729cb54e5f9eb0f316d43ff"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Load Excel data via catalog request">19facef74729cb54e5f9eb0f316d43e2</model>
+        <model_id>19facef74729cb54e5f9eb0f316d43e2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_19facef74729cb54e5f9eb0f316d43e2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:48</sys_created_on>
+        <sys_id>51facef74729cb54e5f9eb0f316d43e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=51facef74729cb54e5f9eb0f316d43e6"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=19facef74729cb54e5f9eb0f316d43e2^sys_idNOT INadfa023b4729cb54e5f9eb0f316d4325"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">19facef74729cb54e5f9eb0f316d43e2</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:49</sys_created_on>
+        <sys_id>adfa023b4729cb54e5f9eb0f316d4325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTWsbMRD9K0anFnyQ7SaufQuBgCFtIE5zCWXRSrNrUa20lbSbuCb/vTP7YW/SpQSSmzR6M/PmzdPDgRmRgmFrdlvZyZVxj5ONZVOmbQRvhbnbl4CPcue0BIy3h2sdIls/HFh2L0xFgFTIX7l3lVUIyq4HNTOqqe3khJh8UpCJysTPhN0UIqcKdN6CARlBsXUmTACM/AjD2zcdgrZ5F3ieDghkzsP/CbxEvKPtzykrhFUiOr8/gbwr7qAojYhwDDqvwLP1jPMpq4nodh82qu1qRUH9fWUTYphokr3upsGj0gGL7e9PEbnTRnmwqDxSKIXHCpHqH149RVxa0u/1sl+dpsbnfMXlcr5aLud8seA8O0szmUm5/Drj57OzFeLGDTFKN75yx3BeeIpg1UDGfzXzINSNNafADm3XzlqIp6D/YPEvnHAZ4HCy0+F4TTqNenmIRWh8ad5uwHrMwd0gnCw2VuuFl+oxC/ZSkFu6bpcfT3D2boJzIthKd1NG7dBCbEGrFamhnLAP7cI9SExJotd5jomY5ExV2O9jvujYD7xbBdwWlOQIWnH/abY793jbr/NK24ZS92icFOZ4ExE7p1Uk/Q5MqFpgBjk6euzx3Lgi+V1RRvN7+l5JMxEBgvS6jBcy6hqOX/kv1VCh4wEFAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=19facef74729cb54e5f9eb0f316d43e2^sys_idNOT IN61fa023b4729cb54e5f9eb0f316d4324,a5fa023b4729cb54e5f9eb0f316d4322,e5fa023b4729cb54e5f9eb0f316d4320"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update catalog item features">8cf98e774729cb54e5f9eb0f316d4366</action_type>
+        <action_type_parent display_value="Update catalog item features">ee9882f34729cb54e5f9eb0f316d439a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>8cf98e774729cb54e5f9eb0f316d4366</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">19facef74729cb54e5f9eb0f316d43e2</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>2e366227-62b3-46d9-8b42-36a11e7cce3f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:49</sys_created_on>
+        <sys_id>61fa023b4729cb54e5f9eb0f316d4324</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <ui_id>fb72ff78-7c9d-4d52-93b7-9cdcf5807537</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51SXWvbQBD8K+WeLaEvS7LfSkKg0DbQtHkJQazu9uyD00m5Ozlxjf979yzZCQmF0hfBzu3szszq4cCUYGtWcLmqsaqKKlvxdlngUq6wTWSelqLIS8EWzECH1Mn7rlUGRaPpS/AO9BjwwyHDvCyzrIrKrM2johSrqG6LLMpLSFOsOMdcxspjdzwSTyg3aNjf/yedb5UWFg1bPzwu2ACW1Hm0bH149/Sv9jS0qN/4+zT7+4ttvx8C7LxVZjPXX+cRd2ewtyJIShcMXzwagaRFgna4YB0YAb63+wtiEcSt0a/AVhlP01hofnHqN+2rkyQJnRLJH8fp9VI2c6YTLK/BA0kZuR/t3Mq3veLopmQEShi1v3qLTQ23g1e9mSgeWn1m93rszPcpEHYZcD4hIaMjETgEq0H7bETebfvnH2eVN8qcUpkfdc9BXyrwlF07+qDnwEb1813ME/IhaNTY0camg2EgpBlsv1OnLeFw8UZTEUvdP5M6pzYmBh4cxnQCiG8Ivz7B92BVsPuNxhA5rPtl1NOIX04/UdEWCV+mUcXrJCpEvYxquUwimZRVjqLGrErZccHc3l1pcO41KLpQ8zQGm1Nsc0DNlHGgcKsG/5lE7XDO4vj4By5lus+cAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=61fa023b4729cb54e5f9eb0f316d4324"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Parse Excel attachment">32a50e3f47e5cb54e5f9eb0f316d4363</action_type>
+        <action_type_parent display_value="Parse Excel attachment">ae04b97b4765cb54e5f9eb0f316d43da</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>32a50e3f47e5cb54e5f9eb0f316d4363</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">19facef74729cb54e5f9eb0f316d43e2</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:49</sys_created_on>
+        <sys_id>a5fa023b4729cb54e5f9eb0f316d4322</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <ui_id>5143245c-84e0-47c7-9756-a7ccffa74b7b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/42RzW7bMBCEX6XgWRIs68/yLUhgoEDbAE6bSxAIS3JpE6AohaKcuIbfvaSk2GobFD1ydpc7+83TiUhO1qRYQrbARKQFZoxmKWaiRLoQSZzzNCkKEhANNbpOsBbYvkZtK4OsMdyVDqB6XzudIBdpFlMeZrSkYYplEtKY52GclFzQxaJcZUm0HebOZzfJZdcqOD5OHziF7aXiBjVZPz0HpAXj1lo0ZH36o/S/vhVQVK715mL80/bd+D9ussfWlwwKdCsZTtKX6bftTHcD3mAcEHyzqDk6ZwJUhwGpQXOwjTleFIPA77W6Cnup7Xh6DW+d/Om2JstgtnhNumNXXT2SWbGaAP52n2sQd2DhwZqe2d5cyDaSYTfS4yigV/Z2ro0N962VjR5HLFD1oQHWqL7W30Z85PLdLMe+c+aw9Tj8fdOx4mHfvF7YbaQeyE1F1TBQs1YEw/YbiconLaTCasgr8HkZSXvrjZ9IL7//ndUofpQWKhySrqFtpd5VrWkOcrDhrqqjnXKPSKjm1dnv5E5HwDyQyOUI0cbpd4P8CEZ6Ol/dN27Yb/yh5UuPn73bOBc5zVgSlnmahOkyycJVuaJhWRQxK0CwPOPkHHiwtwq67krSHVG99J7DyHUiWI2R+BFmZGtvnKkDTrDOz78AwLLKTcgDAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a5fa023b4729cb54e5f9eb0f316d4322"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">19facef74729cb54e5f9eb0f316d43e2</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:49</sys_created_on>
+        <sys_id>e5fa023b4729cb54e5f9eb0f316d4320</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <ui_id>a6f451bd-5b9b-4e93-b1d6-139dfb009853</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GeKTfhK9C3VSuklfZupW13X7ory4kdsK6xU8ehSxH/fcexAxGkQLRUanUfMzO2z8ycM3HyuPYZ8a99Mgkm6WQyHEdB0O8HwWjUT3AYx/1REgcxHvgdX+AFhUiNY07hcYl5YZ7zVY6w1jiZL6jQ4CAszzhe/XD+T3VfMmecKCr868dfHT/DCvbUVPnX6z3XuaA4jimH0AeHag+kXmXbR1T6rO1LfZn31TqkIgZK0PHpb00FoYAhxTynHX+BBcFaqtXWoigmd4LvDHMGGV77vgn+nbMXOHccmLiUQlYJtb7tI3Jlsub0Fmt8r1WR6EK50GQuWUJzWw9CU1xwfVO32YC7TDMp7BKbtl0tebEQX205/O0GVVfAUuQAgmYmUYPcpZHez+XztwrllImyJs7JZYL59gm6rlhcaINn7VNOTZPRAmcZEzOUKblk5WLAsujOODx0Uy6f4dCczUQXJwZ4F+qKu1Ow35bmH1gxk8W/sA0sBkCMA0OQbWEuC1WWcokSXuSlQ2GR2738TcfQ8YbjPN9lDiVHT4XBbevgMka2aGZJolimP8EWS+qS23QqXQyPUnCyo1wiBWEGRV4Th0MNEmHkZwFbkPX6nqol9M27gcS5nKGwq+hTQXONmKaLrg3ebA6V9HebtZTe6bwr6d3UE28qhhPhge1L0wZOhOHFRDgIgo8kQzj8/amwva5sCU6IKyRHSUZ2fMql0sjWsqauQ4m05vkZECqe3xlmevHqNVSO5imjnDS9a6bGsfeu6f0/3zXvkuQAiCDbPSY4E+XIBaBvxf7hUerF4R7PSnrVrl3GhvPkUAPY09J7aa2EM+BUSriHs70Hi6cBYjXvS8rsz/rK6ATQv5gA+r3LCGC9TXNbyIaaV3dF080q/sXE4/14oGBtQbhpElirM8O2Z/Y2hwLut1JwnWzWc/sK5y58qXxFkZ23HAFzWOrOQ1a/6JmRGdW706soIvUz5v81+R3jUNWoMr03uKCGR7+R4toFlaVoAZ1jGVwiFU2AHPDhpihKZSEIcjfoHZFMJ1Om4CZpgw8HzTcK+hGeBGF6ek69MtrbRrd8EZ/Ooyrl59SrEnGn5R4k4pWJeNtE2qXdZmgNLng5vfTQmmLGy27Ax1FWaydVSqpXBteJRh5hxJlT7UxQ4UVB/f3Ya5JA4/g7gfVDfGlffjQlFMeDHh5F/TAMgjAgUTCOonA8itMRjgbpTqMI5SKBaQo7p0AV2B5V1Kj6HBzOHztS2w6aM1BVFLyVwnxn9yLtGVjQX6+CdRq4GyixlJxisTdRHuA98c/U4Xd8Hb67qfIh/jsV7GG/0tbUWOu3ujcU7LtgTwX9bCg2pkFvHJLkahyF0dUgJaOrCcHDKzyJh1Gf0GSQXvIq8OsP6rGUAcUVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e5fa023b4729cb54e5f9eb0f316d4320"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=19facef74729cb54e5f9eb0f316d43e2^sys_idNOT IN6dfa023b4729cb54e5f9eb0f316d431d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7cfacef74729cb54e5f9eb0f316d4354</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Load Excel data via catalog request">19facef74729cb54e5f9eb0f316d43e2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:49</sys_created_on>
+        <sys_id>6dfa023b4729cb54e5f9eb0f316d431d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <ui_id>2e366227-62b3-46d9-8b42-36a11e7cce3f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTTW+jMBD9Lz4nCAgJTW5Vq0qVdrdSW/WyqtBgD4m1xmZtk4RF+e87Dh+telppTzBvvt57DD0zrW9a717NrXNyr9nu5/uCSR0weu+ZFGzHkq2otkm85at0s0rjOL3JknKzKpNUrADFhi2YhhqpUnqsHYVHUG2I+36dZKs0W/PlTYbxMst5vtzm680Scs6rCvKszMsIzxxVYc3JXS7ULaRrFHRv/zWEH6QSFkdJDVhi6NGyXf8l9a8SFZSoqPRx1PhFsu+aEFrkxooJ+Db2PM8oPQKJNF4wPHvUAml9BcrhgtWgBXhjO7bztiXAIognrbq54iC1p3Es1J6d/EMbkzgOhRWSII5Dcg6L0coBru7BwwuN5r61Yyk/GMnRDVYIrKBV/u4zNhQ8NV4aPbR4KNXUbVRb6x+DE2weMH05QlpHJLAJQgP1UUf1cjCn54nlg9RXU8akMhzUHIH3VpatD3x6hgprGlTU0DRS74vGmqO8NhOXOtorCqJKmRMtDQcdAQ/EI/IVogfC76/wG1gZVHynMdR8WTDXuTsFzn1oIROL321gMigbNRSDDaGFW9n4W1pwxJHu5T3c/jB79pRLRxReA/Y4/Vkh0dEFSf4ZOhn7K5D/wC5/AatZrDKjAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_19facef74729cb54e5f9eb0f316d43e2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:49</sys_created_on>
+        <sys_id>29fa023b4729cb54e5f9eb0f316d4312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TestingSource" source="x_1659940_testin_0">3d37c3fd472d0f14e5f9eb0f316d438e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_19facef74729cb54e5f9eb0f316d43e2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:49</sys_created_on>
+        <sys_id>29facef74729cb54e5f9eb0f316d43fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TestingSource" source="x_1659940_testin_0">3d37c3fd472d0f14e5f9eb0f316d438e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TestingSource">3d37c3fd472d0f14e5f9eb0f316d438e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_19facef74729cb54e5f9eb0f316d43e2"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>a8b60abf47e5cb54e5f9eb0f316d43f1</sys_id>
+        <latest_snapshot>19facef74729cb54e5f9eb0f316d43e2</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a8b60abf47e5cb54e5f9eb0f316d43f1^sys_idNOT IN42fa023b4729cb54e5f9eb0f316d4367"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"42fa023b4729cb54e5f9eb0f316d4367","name":"plan","plan_signature":null}}</plan>
+        <plan_id>a8b60abf47e5cb54e5f9eb0f316d43f1</plan_id>
+        <snapshot>0a4e42ff4729cb54e5f9eb0f316d4362</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 04:30:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>42fa023b4729cb54e5f9eb0f316d4367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 04:30:51</sys_updated_on>
+        <trigger display_value="">c2fa023b4729cb54e5f9eb0f316d4366</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a8b60abf47e5cb54e5f9eb0f316d43f1"/>
+</record_update>
